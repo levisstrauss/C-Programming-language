@@ -13,6 +13,73 @@ int main() {
     }
 
 
+
+    int size = 5;
+    // Initialize array
+    int Roll_Number[5] = {100, 101, 102, 103, 104};
+
+    cout << "Values of array before updation: " << endl;
+    // Print values of array
+    for (int i = 0; i < size; i++) {
+        // Accesss elements of array at index i
+        cout << Roll_Number[i] << "  ";
+    }
+    cout << endl;
+    // Update values of array element at index 3 and 4
+    Roll_Number[3] = 22222;
+    Roll_Number[4] = 33333;
+    cout << "Values of array after updation: " << endl;
+    // Print updated values of  array
+    for (int i = 0; i < size; i++) {
+        // Access elements of array at index i
+        cout << Roll_Number[i] << "  ";
+    }
+
+    // Initialize row and column index
+    int row = 3 , column = 3;
+// Initialize static 2D array
+    int Student[row][column] = {{100, 134, 234}, {34, 189, 221}, {109, 139, 56}};
+
+    //Print static 2D Array
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < column; j++) {
+            // Access element at row index i and column index j
+            cout << Student[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+
+    int add_diagonal(int arr[3][3], int row, int col) {
+        // Initialize sum
+        int sum = 0;
+        // Outer loop to traverse rows in a 2D array
+        for (int i = 0; i < row; i++) {
+            // Inner loop to traverse values in each row
+            for (int j = 0; j < col; j++) {
+                // Check if row index is equal to column index
+                if (i == j) {
+                    // Add element at row index i and column index j in sum
+                    sum = sum + arr[i][j];
+                }
+            }
+        }
+        return sum;
+    }
+
+// print_array function
+    void print_array (int arr[3][3], int row, int column){
+        // Outer loop
+        for (int i = 0; i < row; i++) {
+            // Inner loop
+            for (int j = 0; j < column; j++) {
+                cout << arr[i][j] << " ";
+            }
+            cout << endl;
+        }
+    }
+
+
 // Linear Search
     int Arr[10], n = 10;
     cout<<"Enter numbers"<<endl;

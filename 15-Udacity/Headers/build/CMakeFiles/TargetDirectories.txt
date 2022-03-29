@@ -1,0 +1,3 @@
+/Users/Admin/Desktop/C-Programming-language/15-Udacity/Headers/build/CMakeFiles/example.dir
+/Users/Admin/Desktop/C-Programming-language/15-Udacity/Headers/build/CMakeFiles/edit_cache.dir
+/Users/Admin/Desktop/C-Programming-language/15-Udacity/Headers/build/CMakeFiles/rebuild_cache.dir
